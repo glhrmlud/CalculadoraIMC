@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --primary-color: rgb(91, 0, 119);
+  --dark-primary-color: rgb(62, 0, 81);
+  --error: rgb(245, 76, 76);
+  --valid: rgb(90, 230, 90);
+}
+
+/* Estilo corpo da página  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  font-size: 1.3em;
+}
+
+.titulo {
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.container {
+  background-color: white;
+  width: 50%;
+  min-height: auto;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.form {
+  margin: 25px 0 0 0;
+}
+
+.form input, .form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form input {
+  height: 50px;
+  padding: 0 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.button {
+  width: 100%;
+  border: none;
+  background-color: var(--dark-primary-color);
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* Estilos mensagens */
+.erro {
+  margin-top: 20px;
+  color: white;
+  padding: 5px 10px;
+  background-color: var(--error);
+}
+
+.resultado {
+  margin-top: 20px;
+  color: white;
+  padding: 5px 10px;
+  background-color: var(--valid);
+}
